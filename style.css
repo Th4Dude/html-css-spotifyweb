@@ -21,11 +21,17 @@ body{
 /* header */
 
 .nav{
-    background-color: #000000;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
     width: 14.375rem;
-    height: 100%;
-    color: white; 
+    height: calc(100% - 5.625rem);
     padding: 1.25rem;
+    color: #717171; 
+    background-color: #000000;
+    
+    
+    
 }
 
 .logo-big{
@@ -38,27 +44,31 @@ body{
     display: none;
 }
 
-.home, .search, .librery{
+.flex{
     display: flex;
     padding-bottom: .9375rem;
 }
 
 .playlist{
     padding-bottom: .9375rem;
+    color: white;
 }
 
-/* .librery-02{ */
-/*     display: flex; */
-/*     padding-bottom: .9375rem; */
-/*     align-self: center; */
-/* } */
-/*  */
 .fa-solid{
     padding-right: .625rem;
 }
 
-.fa-regular{
+.fa-square-plus{
     font-size: 2.5rem;
+}
+
+.padding-top-left{
+    padding-top: .625rem;
+    padding-left: .625rem;
+}
+
+.padding-left{
+    padding-left: .625rem;
 }
 
 ul li{
@@ -66,9 +76,23 @@ ul li{
     list-style: none;
 }
 
+.small-prof{
+    width: .9375rem;
+}
 
+.hr{
+    padding-top: .9375rem;
+}
 
-
+/* .background-img{ */
+/*     background-color: white; */
+/*     height: 35px; */
+/*     width: 35px; */
+/*     border-radius: 50%; */
+/*     opacity: 0.5; */
+/* } */
+/*  */
+/*  */
 
 
 
@@ -92,8 +116,8 @@ ul li{
     }
     .logo-small{
         display: block;
-        width: 22px;
-        margin-left: -0.5rem;
+        width: 1.375rem;
+        margin-left: -0.0625rem;
         padding-bottom: .9375rem;
     }
     .logo-big{
@@ -106,10 +130,7 @@ ul li{
         display: none;
     }
     .container-bottom{
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-end;
-        height: 78%;        
+
     }
 }
 
@@ -139,7 +160,7 @@ ul li{
 .footer{
     background-color: #282828;
     width: 100%;
-    height: 3.125rem;
+    height: 5.625rem;
     padding: 1.25rem;
     position: absolute;
     bottom: 0;
