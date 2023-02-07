@@ -28,8 +28,43 @@ body{
     padding: 1.25rem;
 }
 
+.logo-big{
+    width: 8.25rem;
+    padding-bottom: 1.25rem;
+}
 
+.logo-small{
+    width: 1.875rem;
+    display: none;
+}
 
+.home, .search, .librery{
+    display: flex;
+    padding-bottom: .9375rem;
+}
+
+.playlist{
+    padding-bottom: .9375rem;
+}
+
+/* .librery-02{ */
+/*     display: flex; */
+/*     padding-bottom: .9375rem; */
+/*     align-self: center; */
+/* } */
+/*  */
+.fa-solid{
+    padding-right: .625rem;
+}
+
+.fa-regular{
+    font-size: 2.5rem;
+}
+
+ul li{
+    padding: 5px 0;
+    list-style: none;
+}
 
 
 
@@ -51,7 +86,31 @@ body{
 @media screen and (max-width:552px) {
     .nav{
         width: 3.125rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .logo-small{
+        display: block;
+        width: 22px;
+        margin-left: -0.5rem;
+        padding-bottom: .9375rem;
+    }
+    .logo-big{
+        display: none;
     }    
+    .container-playlist{
+        display: none;
+    }
+    .none{
+        display: none;
+    }
+    .container-bottom{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        height: 78%;        
+    }
 }
 
 
