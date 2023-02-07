@@ -7,7 +7,7 @@
 body{
     font-family: 'Montserrat', sans-serif;
 }
-
+/* ------------------------------------------------------ */
 /* Common */
 
 .container-main{
@@ -17,7 +17,7 @@ body{
 }
 
 /* Common */
-
+/* ------------------------------------------------------ */
 /* header */
 
 .nav{
@@ -29,9 +29,6 @@ body{
     padding: 1.25rem;
     color: #717171; 
     background-color: #000000;
-    
-    
-    
 }
 
 .logo-big{
@@ -84,29 +81,6 @@ ul li{
     padding-top: .9375rem;
 }
 
-/* .background-img{ */
-/*     background-color: white; */
-/*     height: 35px; */
-/*     width: 35px; */
-/*     border-radius: 50%; */
-/*     opacity: 0.5; */
-/* } */
-/*  */
-/*  */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 @media screen and (max-width:552px) {
     .nav{
         width: 3.125rem;
@@ -134,9 +108,8 @@ ul li{
     }
 }
 
-
 /* header */
-
+/* ------------------------------------------------------ */
 /* Main */
 
 .main{
@@ -154,7 +127,7 @@ ul li{
 }
 
 /* Main */
-
+/* ------------------------------------------------------ */
 /* Footer */
 
 .footer{
@@ -168,7 +141,7 @@ ul li{
 }
 
 /* Footer */
-
+/* ------------------------------------------------------ */
 
 
 
