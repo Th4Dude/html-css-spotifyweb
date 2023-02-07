@@ -161,6 +161,7 @@ ul li {
     position: absolute;
     bottom: 0;
     left: 0;
+    color: white;
 }
 
 .container-footer {
@@ -169,13 +170,29 @@ ul li {
 }
 
 .left-row,
-.center-row,
 .right-row {
     display: flex;
 }
 
-.small-box-left{
+.small-box-left, .small-box-center{
     display: flex;
+}
+
+.img-left-row{
+    width: 3.125rem;
+    height: 3.125rem;
+}
+
+.volume-bar{
+    width: 26.875rem;
+    height: .3125rem;
+    background-color: #5a5a5a;
+}
+
+.volume-bar2{
+    width: 7.5rem;
+    height: .3125rem;
+    background-color: #5a5a5a;
 }
 
 /* Footer */
