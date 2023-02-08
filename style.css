@@ -163,12 +163,54 @@ a:hover {
     width: 100%;
     display: flex;
     justify-content: center;
-    padding: .625rem;
+    padding: .9375rem;
 }
 
 .padding-right{
     padding-right: 1.25rem;
 }
+
+.container-albums{
+    display: flex;
+    width: calc(100% / 6);
+}
+
+.locandina{
+   width: 100%;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:878px){
+    .container-list-main{
+        flex-wrap: wrap;
+    }
+}
+
+
 
 
 /* Main */
