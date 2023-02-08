@@ -6,6 +6,7 @@
 
 body {
     font-family: 'Montserrat', sans-serif;
+    overflow: hidden;
 }
 
 /* ------------------------------------------------------ */
@@ -74,12 +75,28 @@ ul li {
     list-style: none;
 }
 
+.style {
+    text-decoration: none;
+    color: #717171;
+}
+
+a:hover {
+    color: white;
+}
+
 .small-prof {
     width: .9375rem;
 }
 
 .hr {
     padding-top: .9375rem;
+}
+
+/* .container-top{ */
+/*     height: 100%; */
+/* } */
+.prova {
+    overflow: hidden;
 }
 
 @media screen and (max-width:552px) {
@@ -119,7 +136,7 @@ ul li {
 .main {
     position: relative;
     flex-grow: 1;
-    height: 100%;
+    height: calc(100% - 5.625rem);
     background-color: #141922;
 }
 
@@ -158,10 +175,11 @@ ul li {
     width: 100%;
     height: 5.625rem;
     padding: 1.25rem;
-    position: absolute;
-    bottom: 0;
+    /* position: absolute; */
+    /* bottom: 0; */
     left: 0;
     color: white;
+    padding: .625rem;
 }
 
 .container-footer {
@@ -169,31 +187,107 @@ ul li {
     justify-content: space-between;
 }
 
-.left-row,
+/* ROWS----------- */
+
+.left-row {
+    width: 15%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.center-row {
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .right-row {
+    width: 15%;
     display: flex;
+    justify-content: end;
+    align-items: center;
 }
 
-.small-box-left, .small-box-center{
-    display: flex;
+/* ROWS------------- */
+
+.container-center-row{
+    width: 100%;
 }
 
-.img-left-row{
+.small-box-center {
+    justify-content: center;
+}
+
+.small-box-left,
+.small-box-center {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.img-left-row {
     width: 3.125rem;
     height: 3.125rem;
 }
 
-.volume-bar{
-    width: 26.875rem;
+/* ICONS----------- */
+
+.cuoricino,
+.folder,
+.misto,
+.backward,
+.play,
+.forward,
+.ripeti,
+.bars,
+.desktop,
+.volume-low {
+    background-color: #282828;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 1.125rem;
+    padding: 0 .1875rem;
+}
+
+/* ICONS----------- */
+
+.minutes{
+    font-size: .625rem;
+    padding: 0 .1875rem;
+}
+
+/* VOLUME-BARS---------------- */
+
+.volume-bar {
+    width: 50%;
     height: .3125rem;
     background-color: #5a5a5a;
 }
 
-.volume-bar2{
-    width: 7.5rem;
+.volume-bar2 {
+    min-width: 50%;
     height: .3125rem;
     background-color: #5a5a5a;
 }
+
+/* VOLUME-BARS---------------- */
+
+@media screen and (max-width:552px) {
+    .left-row{
+        width: 25%;
+    }
+    .center-row{
+        width: 50%;
+    }
+    .right-row{
+        width: 25%;
+    }
+}
+
+
 
 /* Footer */
 /* ------------------------------------------------------ */
