@@ -210,7 +210,6 @@ a:hover {
 
 /* Container Albums----------------------- */
 
-
 .container-main {
     padding: 15px;
 }
@@ -222,29 +221,52 @@ a:hover {
     text-align: center;
 }
 
+.box-album {
+    width: calc(100% / 6);
+}
+
+/* Img-hover adn info img------------------ */
+
 .box-img {
     padding: 25px 10px 10px 0px;
+    position: relative;
 }
 
 img {
     width: 100%;
 }
 
+.playnow{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+    font-size: 80px;
+}
+
+.box-img:hover .playnow{
+    display: block;
+    color: white;
+}
+
+.box-img img:hover{
+    opacity: 0.5;
+}
+
+/* Img-hover adn info img------------------ */
+
 .container-albums div h6 {
     color: #717171;
     padding-top: .3125rem;
 }
 
-.box-album {
-    width: calc(100% / 6);
-}
-
-.container-main h2{
+.container-main h2 {
     padding-top: 2.5rem;
     padding-bottom: 1.25rem;
 }
 
-.img-tonda{
+.img-tonda {
     border-radius: 50%;
 }
 
@@ -263,7 +285,8 @@ img {
         width: calc(100% / 4);
         justify-content: center;
     }
-    .testo{
+
+    .testo {
         font-size: 12px;
     }
 }
@@ -272,28 +295,31 @@ img {
     .container-list-main {
         flex-wrap: wrap;
     }
+
     .box-album {
         display: flex;
         flex-wrap: wrap;
         width: calc(100% / 2);
         justify-content: center;
     }
-    .testo{
+
+    .testo {
         font-size: 12px;
     }
 }
 
 @media screen and (max-width:552px) {
-    .button-zindex{
+    .button-zindex {
         width: calc(100% - 3.125rem);
     }
 }
 
 /* MEDIA QUERY --------------------------------*/
 
-
 /* Main */
+
 /* ------------------------------------------------------ */
+
 /* Footer */
 
 .footer {
@@ -358,10 +384,9 @@ img {
     height: 3.125rem;
 }
 
-.padding-bottom{
+.padding-bottom {
     padding-bottom: .9375rem;
 }
-
 
 /* ICONS----------- */
 
@@ -383,11 +408,10 @@ img {
     padding: 0 .1875rem;
 }
 
-.play:hover{
+.play:hover {
     scale: 1.4;
     transition: 1s;
 }
-
 
 /* ICONS----------- */
 
