@@ -54,7 +54,6 @@ body {
     color: white;
 }
 
-
 .playlist {
     padding-bottom: .9375rem;
     color: white;
@@ -152,7 +151,7 @@ a:hover {
 /* Parte-sopra-button-------------------- */
 
 .button-zindex {
-    background-color: rgba(0, 0, 0, 0.2);
+    background-color: rgba(0, 0, 0, 0.5);
     width: calc(100% - 14.375rem);
     height: 5.625rem;
     padding: 1.25rem;
@@ -236,7 +235,7 @@ img {
     width: 100%;
 }
 
-.playnow{
+.playnow {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -245,12 +244,12 @@ img {
     font-size: 80px;
 }
 
-.box-img:hover .playnow{
+.box-img:hover .playnow {
     display: block;
     color: white;
 }
 
-.box-img img:hover{
+.box-img img:hover {
     opacity: 0.5;
 }
 
